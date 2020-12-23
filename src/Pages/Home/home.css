@@ -1,0 +1,411 @@
+
+/* @font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src:url('../fonts/roboto-v20-latin-300.woff2') format('woff2'), 
+  url('../fonts/roboto-v20-latin-300.woff') format('woff'); 
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), 
+  url('../fonts/roboto-v20-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/roboto-v20-latin-500.woff2') format('woff2'), 
+  url('../fonts/roboto-v20-latin-500.woff') format('woff'); 
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v20-latin-700.woff2') format('woff2'), 
+  url('../fonts/roboto-v20-latin-700.woff') format('woff'); 
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+}
+
+.inner-header {
+  display: flex;
+  align-items: center;
+}
+
+.inner-header img {
+  width: 20px;
+  height: 44px;
+}
+
+.inner-header ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-left: auto;
+  list-style-type: none;
+}
+
+.inner-header li, .inner-header form {
+  margin-left: 30px;
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.inner-header button {
+  text-decoration: none;
+  color: #8a8989;
+  font-weight: 500;
+  font-size: 15px;
+  padding-bottom: 5px;
+  transition: all 0.5s ease;
+  border: none;
+  outline: none;
+  display: block;
+  background: none;
+  cursor: pointer;
+}
+
+.inner-header button:hover {
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+
+.inner-header input {
+  outline: none;
+  border: none;
+  color: #000;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #000;
+  width: 140px;
+}
+
+::placeholder {
+  color: #2b2929;
+  font-weight: 600;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #000;
+  font-weight: 600;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #000;
+  font-weight: 600;
+}
+
+.freedom-section {
+  margin: 0;
+  padding: 0;
+  height: 80vh;
+  background-image: url("../img/watches.jpg");
+  background-size: 600px;
+  background-repeat: no-repeat;
+  background-position: 950px 0px;
+  border-bottom: 1px solid #ccc;
+}
+
+.content {
+  padding-top: 100px;
+  width: 400px;
+}
+
+.content h1 {
+  font-weight: 700;
+  font-size: 33px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.content p {
+  border-left: 1px solid #000;
+  padding-left: 30px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #696868;
+}
+
+.btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 25px;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  background-color: #da1818;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #b10e0e;
+}
+
+.paragraphs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.paragraphs h3 {
+  padding: 0;
+  margin: 0;
+  margin-bottom:40px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.text {
+  width: 280px;
+}
+
+.paragraphs p {
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+.more {
+  display: flex;
+}
+
+.div {
+  width: 7px;
+  height: 7px;
+  margin-right: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.learn-more {
+  display: flex;
+}
+
+.learn-more a {
+  text-decoration: none;
+  color: #da1818;
+  margin-left: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.learn-more hr {
+  height: 3px;
+  width: 30px;
+  background-color: #da1818;
+  border: none;
+  border-radius: 5px;
+  margin-left: 0;
+  margin-right: 20px;
+  transition: all 0.3s ease;
+}
+
+.learn-more:hover hr {
+  width: 60px;
+}
+
+.preview {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.preview-heading {
+  width: 300px;
+  line-height: 1.2;
+}
+
+.preview img {
+  margin-left: auto;
+  width: 400px;
+  height: 650px;
+}
+
+.last-section {
+  background-image: url("../img/runners.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: 0px -110px;
+  background-repeat: no-repeat;
+}
+
+.health-text {
+  padding-top: 200px;
+  margin-left: auto;
+  width: 400px;
+}
+
+.health-text h1 {
+  font-weight: 700;
+  font-size: 33px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.health-text p {
+  border-left: 1px solid #fff;
+  padding-left: 30px;
+  line-height: 1.7;
+  font-weight: 500;
+  font-size: 15px;
+  color: #fff;
+}
+
+.position-excersise img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display:inline-block;
+}
+
+.position-excersise {
+  padding: 20px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  background-color: green;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+  border: 10px solid #fff;
+}
+
+.excercise-2 {
+  margin-left: 100px;
+  margin-bottom: 100px;
+  padding: 7px;
+  width: 300px;
+  background-color: #74538b;
+  border-radius: 6px;
+}
+
+.excersise-2 p {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  padding: 20px;
+  position: relative;
+  margin-top: 40px;
+}
+
+.wrapper::before {
+  position: absolute;
+  width: 0;
+  background: transparent;
+  border: 20px solid #74538b;
+  border-left: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid transparent;
+  content: "";
+  left: 100px;
+}
+
+.positioning {
+  display: flex;
+}
+
+.keyingi-mashq {
+  position: relative;
+  display: inline-block;
+  margin-left: 200px;
+  overflow: hidden;
+}
+
+.keyingi-mashq img {
+  display: block;
+}
+
+.parda {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+  color: #fff;
+}
+
+.keyingi-mashq:hover .parda {
+  transform: translateX(0);
+}
+
+.menu {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 300px;
+  transition: display 0.5s ease;
+}
+
+.menu-link {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  background-color: lightseagreen;
+  color: #fff;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  top: 100%;
+  left: 0;
+}
+
+.menu:hover .submenu {
+  display: block;
+}
+
+.submenu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  background-color: lightgreen;
+  color: #fff;
+  white-space: nowrap;
+}
+
+
+
+

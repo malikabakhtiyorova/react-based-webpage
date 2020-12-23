@@ -1,0 +1,15 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	--nav-height: 0;
+}
+main {
+	padding-top: var(--nav-height);
+}
+ul {
+	list-style: none;
+}

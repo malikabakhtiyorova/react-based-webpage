@@ -1,0 +1,10 @@
+nav#public {
+	background: red;
+	position: fixed;
+	width: 100vw;
+	resize: vertical;
+	overflow: auto;
+}
+nav#public > ul {
+	display: flex;
+}
