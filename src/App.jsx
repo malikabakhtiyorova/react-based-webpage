@@ -8,6 +8,8 @@ import Services from './Pages/Services/Services'
 import Offers from './Pages/Offers/Offers'
 import logo from './Pages/img/logo.svg';
 
+
+
 import './Pages/Home/home.css'
 
 import { Link } from 'react-router-dom'
@@ -58,6 +60,8 @@ function App () {
     </div>
 
   </header>
+
+	
 
 			<Switch>
 				<Route path="/" component={Home} exact />

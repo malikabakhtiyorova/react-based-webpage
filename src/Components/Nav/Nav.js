@@ -11,7 +11,7 @@ function Nav () {
 	useEffect(() => {
 
 		const ro = new ResizeObserver((entries) => {
-			document.body.style.setProperty('--nav-height', entries[0].contentRect.height + 'px')
+			document.body.style.setProperty('--nav-width', entries[0].contentRect.width + 'px')
 		})
 
 		ro.observe(navRef.current)
@@ -22,16 +22,32 @@ function Nav () {
 		<>
 			<nav ref={navRef} id="public">
 				<ul>
-					<li>
-						<button onClick={() => history.replace('/')}>
-							<span>Home</span>
+					<li className='li'>
+
+						<div className='toggle no'>
+							<ul>
+								<li>Home</li>
+								<li>About</li>       
+								<li>Offers</li>
+								<li>Services</li>
+							</ul>
+						</div>
+
+						<button className='sidebar-btn' onClick={()=> {
+							document.querySelector('.li').classList.toggle('on')
+							document.querySelector('.toggle').classList.toggle('no')
+							document.querySelector('.toggle').classList.toggle('yes')
+							document.querySelector('#public').classList.toggle('nav-open')
+						}} >
+						>
 						</button>
-					</li>
-					<li>
+					</li>                 
+ 
+					{/* <li>
 						<button onClick={() => history.replace('/news')}>
 							<span>News</span>
 						</button>
-					</li>
+					</li> */}
 				</ul>
 			</nav>
 		</>

@@ -1,13 +1,16 @@
 
 import preview from '../img/preview.jpg';
-
+import ImageSlider from '../../Components/imageSlider'
+import { SliderData } from '../../Components/sliderData'
 import './home.css'
+import Nav from '../../Components/Nav/Nav'
 
 function Home () {
 
 	return (
 		<>
-
+		<Nav />
+		<main>
   <section className="freedom-section">
     <div className="container">
       <div className="freedom">
@@ -75,37 +78,10 @@ function Home () {
   </section>
 
 
-
-  <div className="positioning">
-    <div className="position-excersise">
-      <img src="https://picsum.photos/150" alt="logo" />
-      <div className="circle"><div className="little-green"></div></div>
-    </div>
+	<ImageSlider slides={SliderData}/>
   
   
-  
-    <div className="wrapper">
-      <div className="excercise-2">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, tenetur!</p>
-      </div>
-    </div>
-  </div>
-
-  <div className="keyingi-mashq">
-    <img src="https://picsum.photos/300" alt="photo" />
-    <div className="parda">Hello World</div>
-  </div>
-
-  <div className="menu">
-    <a className="menu-link" href="#">Menu</a>
-    <ul className="submenu">
-      <li><a href="#">lorem ipsum</a></li>
-      <li><a href="#">lorem</a></li>
-      <li><a href="#">lorem</a></li>
-      <li><a href="#">lorem</a></li>
-      <li><a href="#">lorem</a></li>
-    </ul>
-  </div>
+  </main>
 		
 		</>
 	)

@@ -100,7 +100,7 @@ body {
   color: #000;
   padding-bottom: 5px;
   border-bottom: 1px solid #000;
-  width: 140px;
+  width: 142px;
 }
 
 ::placeholder {
@@ -240,6 +240,11 @@ body {
   line-height: 1.2;
 }
 
+.preview {
+  margin-bottom: 0;
+  margin-bottom: -50px;
+}
+
 .preview img {
   margin-left: auto;
   width: 400px;
@@ -336,76 +341,4 @@ body {
 .positioning {
   display: flex;
 }
-
-.keyingi-mashq {
-  position: relative;
-  display: inline-block;
-  margin-left: 200px;
-  overflow: hidden;
-}
-
-.keyingi-mashq img {
-  display: block;
-}
-
-.parda {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: translateX(-100%);
-  transition: transform 0.5s ease;
-  color: #fff;
-}
-
-.keyingi-mashq:hover .parda {
-  transform: translateX(0);
-}
-
-.menu {
-  display: inline-block;
-  position: relative;
-  margin-bottom: 300px;
-  transition: display 0.5s ease;
-}
-
-.menu-link {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  text-align: center;
-  background-color: lightseagreen;
-  color: #fff;
-}
-
-.submenu {
-  display: none;
-  position: absolute;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  top: 100%;
-  left: 0;
-}
-
-.menu:hover .submenu {
-  display: block;
-}
-
-.submenu a {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  background-color: lightgreen;
-  color: #fff;
-  white-space: nowrap;
-}
-
-
-
 

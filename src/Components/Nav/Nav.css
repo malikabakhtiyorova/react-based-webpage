@@ -1,10 +1,58 @@
 nav#public {
 	background: red;
-	position: fixed;
-	width: 100vw;
-	resize: vertical;
+	background-color: rgba(0, 0, 0, 0.5);
+	/* position: fixed; */
+	position: absolute;
+	/* width: 200px; */
+	min-width: 30px;
+	max-width: 200px;
+	height: 550px;
+	resize: horizontal;
 	overflow: auto;
+	border-radius: 0 50% 50% 0;
 }
 nav#public > ul {
 	display: flex;
+}
+
+ul {
+	list-style: none;
+}
+
+#public.nav-open {
+	background-color: #da1818;
+}
+
+.yes {
+	display: block;
+}
+
+.yes li {
+	padding: 10px;
+}
+
+.no {
+	display: none;
+}
+.on {
+	width: 200px;
+}
+
+
+.sidebar-btn {
+	padding: 10px;
+  display:flex;
+	position: absolute;
+	top: 50%;
+	cursor: pointer;
+	border-radius: 50%;
+	margin-left: auto;
+	background: #000;
+	padding: 5px 10px;
+	outline: none;
+	z-index: 100;
+	color: #fff;
+	font-size: 25px;
+	right: 0;
+	background-image: url('../../Pages/img/right.png');
 }
